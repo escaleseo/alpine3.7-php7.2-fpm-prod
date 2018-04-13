@@ -11,9 +11,9 @@ https://hub.docker.com/r/escaletech/alpine3.7-php7.2-fpm-prod
 ## Production container ##
 
 ### Services ###
-alpine 3.7
-php 7.2
-php-fpm
+- alpine 3.7
+- php 7.2
+- php-fpm
 
 ### Packages ###
 - ca-certificates
