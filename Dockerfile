@@ -1,7 +1,5 @@
 FROM php:7.2-fpm-alpine3.7
 
-WORKDIR /app
-
 RUN apk add --update --no-cache --virtual .ext-deps \
   libjpeg-turbo-dev \
   libwebp-dev \
@@ -61,9 +59,3 @@ RUN docker-php-ext-install mysqli && \
 	docker-php-ext-install pdo_mysql && \
 	docker-php-ext-install mbstring && \
 	docker-php-ext-install opcache
-
-COPY --from=melhortvporassinaturacombr_app_melhortvporassinatura /app /app
-
-EXPOSE 80
-
-ENTRYPOINT ["php-fpm"]
