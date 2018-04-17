@@ -3,6 +3,7 @@ FROM php:7.2-fpm-alpine3.7
 RUN apk upgrade && apk add --update --no-cache --virtual .ext-deps \
   autoconf \
   automake \
+  libtool \
   nasm \
   g++ \
   make \
